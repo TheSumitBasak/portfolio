@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     title: "Sumit Basak - Portfolio",
     description:
       "Portfolio of Sumit Basak, a software engineer specializing in web development.",
-    url: "https://sumitbasak.com",
+    url: "https://sumit-basak.vercel.app",
     siteName: "Sumit Basak Portfolio",
     images: [
       {
-        url: "https://sumitbasak.com/open-graph-image.png",
+        url: "https://sumit-basak.vercel.app/open-graph-image.png",
         width: 1200,
         height: 630,
         alt: "Sumit Basak Portfolio",
