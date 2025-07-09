@@ -66,7 +66,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
   },
-  themeColor: "#000000",
 };
 
 export default function RootLayout({

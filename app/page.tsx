@@ -352,6 +352,7 @@ function PortfolioContent() {
                   <a
                     href="https://github.com/TheSumitBasak"
                     target="_blank"
+                    title="GitHub profile"
                     className="flex items-center gap-3"
                   >
                     <Github className="mr-2 h-4 w-4" />
@@ -366,6 +367,7 @@ function PortfolioContent() {
                   <a
                     href="https://www.linkedin.com/in/thesumitbasak"
                     target="_blank"
+                    title="LinkedIn profile"
                     className="flex items-center gap-3"
                   >
                     <Linkedin className="mr-2 h-4 w-4" />
@@ -380,6 +382,7 @@ function PortfolioContent() {
                   <a
                     href="https://x.com/TheSumitBasak"
                     target="_blank"
+                    title="Twitter/X profile"
                     className="flex items-center gap-3"
                   >
                     <Twitter className="mr-2 h-4 w-4" />X
@@ -602,17 +605,17 @@ function PortfolioContent() {
                     <a
                       href={project.github}
                       target="_blank"
-                      className="relative overflow-hidden rounded-xl"
-                    >
-                      <Image
-                        src={project.image || "/placeholder.svg"}
-                        alt={project.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </a>
+                      title={`GitHub: ${project.title}`}
+                      className="absolute inset-0 z-[100]"
+                    ></a>
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      width={600}
+                      height={400}
+                      className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-105 rounded-2xl"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                 </div>
 
@@ -650,7 +653,10 @@ function PortfolioContent() {
                       asChild
                       className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 theme-hover transition-all duration-300 bg-transparent group backdrop-blur-sm"
                     >
-                      <Link href={project.github}>
+                      <Link
+                        href={project.github}
+                        title={`GitHub: ${project.title}`}
+                      >
                         <Github className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
                         View Code
                       </Link>
@@ -660,7 +666,10 @@ function PortfolioContent() {
                       asChild
                       className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 group animate-glow"
                     >
-                      <Link href={project.demo}>
+                      <Link
+                        href={project.demo}
+                        title={`Live Demo: ${project.title}`}
+                      >
                         <ExternalLink className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
                         Live Demo
                       </Link>
@@ -1007,6 +1016,7 @@ function PortfolioContent() {
               <a
                 href="https://www.linkedin.com/in/thesumitbasak"
                 target="_blank"
+                title="LinkedIn profile"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -1016,7 +1026,11 @@ function PortfolioContent() {
               size="sm"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
             >
-              <a href="https://x.com/TheSumitBasak" target="_blank">
+              <a
+                href="https://x.com/TheSumitBasak"
+                target="_blank"
+                title="Twitter/X profile"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
             </Button>
@@ -1032,7 +1046,11 @@ function PortfolioContent() {
               size="sm"
               className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
             >
-              <a href="mailto:sumitbasak2208@gmail/com" target="_blank">
+              <a
+                href="mailto:sumitbasak2208@gmail/com"
+                target="_blank"
+                title="Email"
+              >
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
