@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   applicationName: "Sumit Basak Portfolio",
   keywords: [
     "Sumit Basak",
+    "sumit basak",
+    "sumit-basak",
     "Portfolio",
     "Software Engineer",
     "Web Development",
