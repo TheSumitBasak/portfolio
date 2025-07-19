@@ -977,7 +977,7 @@ function PortfolioContent() {
                   className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 theme-hover transition-all duration-300 bg-transparent backdrop-blur-sm"
                 >
                   <a
-                    className="w-100 inline-flex items-center justify-center"
+                    className="w-full inline-flex items-center justify-center"
                     href="https://github.com/TheSumitBasak"
                     target="_blank"
                   >
